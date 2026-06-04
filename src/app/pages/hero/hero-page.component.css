@@ -1,0 +1,21 @@
+h1{
+text-align: center;
+text-transform: uppercase;
+background-color: #ffffff;
+color: #330d9b;
+}
+table{
+    background-color: #360aaf;
+    margin: 0 auto;
+    padding: 10px;
+    color: #ffffff;
+}
+button{
+background-color: #360aaf;
+color: #ffffff;
+margin:auto;
+display: block;
+}
+body{
+    background-color: #000000;
+}
