@@ -7,6 +7,7 @@ import { Component, signal } from "@angular/core";
 export class HeroPageComponent{
     name = signal('Punisher');
     age = signal('40 años');
+    alias = signal('Frank Castle');
     description = signal('');
 
     modifyName() {
@@ -14,6 +15,9 @@ export class HeroPageComponent{
 }
     modifyAge(){
         this.age.set('35 años');
+    }
+    modifyAlias(){
+        this.alias.set('Matt Murdock');
     }
     getHeroDescription(){
         if (this.name() == 'Punisher'){
@@ -25,6 +29,7 @@ export class HeroPageComponent{
     reset(){
         this.name.set('Punisher')
         this.age.set('40 años')
+        this.alias.set('Frank Castle')
     }
 }
 

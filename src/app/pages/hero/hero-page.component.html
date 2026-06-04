@@ -16,8 +16,8 @@
             <td>{{getHeroDescription()}}</td>
         </tr>
         <tr>
-            <td>Capitalizado:</td>
-            <td>{{name().toUpperCase()}}</td>
+            <td>Alias:</td>
+            <td>{{alias()}}</td>
         </tr>
     </table>
 </div>
@@ -28,6 +28,9 @@
     </button>
     <button class="btn btn-primary mx-2" (click)="modifyAge()"> <!--Modifica la edad del héroe, cada vez que se da click -->
         Cambiar Edad
+    </button>
+    <button class="btn btn-primary mx-2" (click)="modifyAlias()"> <!--Modifica el alias del héroe, cada vez que se da click -->
+        Cambiar Alias
     </button>
     <button (click)="reset()">Reset</button>
 </div>
