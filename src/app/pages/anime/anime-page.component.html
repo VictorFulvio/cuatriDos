@@ -3,7 +3,7 @@
 <section class="row">
     <div class="col-12 col-sm-6">
         <h3>
-            Agregar
+            Agregar {{name()}}
         </h3>
         <input 
             type="text" 
@@ -12,7 +12,7 @@
             placeholder="Nombre"
             class="form-control mb-2"
             [value]="name()"
-            (changer)="name.set(txtName.value)"
+            (change)="name.set(txtName.value)"
             #txtName
         >
         <input type="number"
