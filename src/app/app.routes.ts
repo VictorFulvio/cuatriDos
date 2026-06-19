@@ -2,6 +2,7 @@
 import { Routes } from '@angular/router';
 import { CounterPageComponent } from './pages/counter/counter.component';
 import { HeroPageComponent } from './pages/hero/hero-page.component';
+import { AnimeComponent } from './pages/anime/anime-page.component';
  
 export const routes: Routes = [
  {
@@ -19,6 +20,10 @@ export const routes: Routes = [
         component: HeroPageComponent, 
     },
     //Cada posición del arreglo indica un objeto
+    {
+        path: 'anime',
+        component: AnimeComponent
+    }
 
  
 
