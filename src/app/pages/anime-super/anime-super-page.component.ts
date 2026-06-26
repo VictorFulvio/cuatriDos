@@ -1,14 +1,17 @@
 import { Component, signal } from "@angular/core";
+import { CharacterFormComponent } from "../../components/character-form/character-form.component";
 interface Character { //al nivel de interfase cumple con las reglas
     id:number;
     name:string;
     power:number;
 }
 @Component({
-    selector:'app-anime',
-    templateUrl: './anime-page.component.html'
+    selector:'app-anime-super',
+    imports: [CharacterFormComponent],
+    templateUrl: './anime-super-page.component.html'
+    
 })
-export class AnimeComponent{
+export class AnimeSuperComponent{
     name = signal('');
     power = signal(0); //Se agregan con la información de los input
     characters = signal<Character[]> //al no estar en parentesis son datos creados por Mi y con sus caracteristicas o reglas
